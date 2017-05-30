@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Slick Playground</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="./css/slick.css">
+  <link rel="stylesheet" type="text/css" href="./css/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+
+  <section class="regular slider">
+	<!----------------------1---------------------->
+    <div class="carousel-contents carousel-content1">
+      <div class="offer-des yt-fair-section"> <a class="lowest-fair-section popmodal eventTrackable" data-trackcategory="Home Page" data-trackaction="Fare Finder" data-trackvalue=" " data-contentcss="res-best-fare res-modal fixTop" data-ajaxurl="/fresco/home/internalService?name=MONTH_GRAPH_DOMESTIC" data-onsuccess="graph.init()" data-onshow="graph.onshow()" data-onhide="graph.onhide()" href="javascript:void(0);" data-width="995" data-ajax="true" data-placement="window" title="Lowest Fare Finder" id="graphicalViewBtn"> <span class="fair"> <span class="title">Lowest Fare Finder</span> <span class="sub" title="Find the cheapest fare for flights">Find the cheapest fare for flights</span> </span> <span class="graph"><i class="ico ico-graph-home-v2"> &nbsp; </i></span> </a> </div>
+    </div>
+	<!----------------------2---------------------->
+    <div class="carousel-contents carousel-content2">
+      <div class="offer-des"> <span class="title" title=" ₹1,000 off on domestic flights"><span class="RupeeSign"></span>1,000 off on domestic flights </span> <span class="type" title=" Flat 10% OFF (up to ₹15,000) on international flights">Flat 10% OFF (up to 15,000) on international flights</span><span class="applicable" title="Flights">Flights</span><span class="offer-detail"> </span> </div>
+	  <div class="transs">&nbsp</div>	  
+    </div>
+	<!----------------------3---------------------->
+    <div class="carousel-contents carousel-content3">
+     <div class="offer-des"> <span class="title" title=" Up to Rs.1,200 OFF">Up to 1,200 OFF </span> <span class="type" title=" On domestic flights with IndusInd Bank ">On domestic flights with IndusInd Bank</span> <span class="applicable" title="Domestic flights">Domestic flights</span> <span class="offer-detail"> </span> </div><div class="transs">&nbsp</div>
+    </div>
+	<!----------------------4---------------------->
+    <div class="carousel-contents carousel-content4">
+	  <div class="offer-des"> <span class="title" title=" Additional 10% off with eCash">Additional 10% off with eCash </span> <span class="type" title=" + 40% cash back in your Yatra account">+ 40% cash back in your Yatra account</span> <span class="applicable" title="Domestic Hotels">Domestic Hotels</span><span class="offer-detail"> </span> </div><div class="transs">&nbsp</div>
+    </div>
+	<!----------------------5---------------------->
+    <div class="carousel-contents carousel-content5">
+      <div class="offer-des"> <span class="title" title=" Get 100% cash back ">Get 100% cash back </span> <span class="type" title=" On Dubai Holidays">On Dubai Holidays</span> <span class="applicable" title="International Holidays">International Holidays</span> <span class="offer-detail"></span> </div><div class="transs">&nbsp</div>
+    </div>
+	<!----------------------6---------------------->
+    <div class="carousel-contents carousel-content6">
+      <div class="offer-des"> <span class="title" title=" Special 30% Cashback">Special 30% Cashback </span> <span class="type" title=" On International Flights">On International Flights</span> <span class="applicable" title="International flights">International flights</span> <span class="offer-detail"> </span> </div><div class="transs">&nbsp</div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="./js/slick.min.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+      $('.regular').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 300,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+    });
+  </script>
+
+</body>
+</html>

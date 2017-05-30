@@ -1,0 +1,146 @@
+.regular {
+/*	width: 100%;*/
+}
+html, body {
+      margin: 0;
+      padding: 0;
+	  font: normal 87.5%/1.2 "Arial";
+	  background-color: #6699ff;
+    }
+.slider {
+        width: 80%;
+        margin: 100px auto;
+    }
+.slick-slide {
+      margin: 0px 20px;
+    }
+.slick-prev:before,
+.slick-next:before {
+        color: black;
+    }
+.regular .carousel-contents {
+	display: block;
+    cursor: pointer;
+    background: rgba(0,0,0,0.8) url("../img/non-active-bg.png") repeat 0 0;
+    position: relative;
+    height: 109px;
+    overflow: hidden;
+}
+.regular .carousel-contents:hover {
+	display: block;
+    cursor: pointer;
+    background: rgba(0,0,0,0.4) url("../img/active-transp-bg.png") repeat 0 0;
+	opacity: 0.7;
+    position: relative; 
+    height: 109px;
+    overflow: hidden;
+}
+.slider {
+	/*width: 1240px !important;*/
+	background: rgba(255,255,255,0);
+}
+.regular .carousel-content2 .transs ,.carousel-content4 .transs,.carousel-content6  .transs {
+	background-color: #ffaa1f !important;
+}
+.regular .carousel-contents .transs {    
+	position: absolute;
+    bottom: 6px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #333;
+    transition: all .2s ease-in-out 0s;
+    z-index: 5;
+    background-color: #4a90e2;
+	outline: none;
+}
+.regular .carousel-content2 .applicable ,.carousel-content4 .applicable,.carousel-content6  .applicable {
+	color: #ffaa1f !important;
+	outline:none;
+}
+.regular .carousel-content3 .applicable ,.carousel-content5 .applicable {
+	color: #4a90e2 !important;
+	outline:none;
+}
+.regular .carousel-contents .fair {
+	width: 72%;
+    float: left;
+    background: none!important;
+    padding: 0;
+    z-index: 99;
+    overflow: visible;
+}
+.regular .carousel-contents .offer-des {
+	position: relative;
+    z-index: 6;
+    padding-left: 10px;
+	outline: none;
+}
+.regular .carousel-contents .fair .title {
+	color: #fff;
+	outline: none;
+}
+.regular .carousel-contents .fair .sub {
+	color: #fff;
+    line-height: normal;
+    white-space: nowrap;
+    width: auto;
+}
+.regular .carousel-contents .title {
+    font-size: 1.28571em;
+    padding: 15px 0 0;
+}
+.regular .carousel-contents .offer-des span, .type {
+	display: block;
+    color: #fff;
+    line-height: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+	outline: none;
+}
+.regular .slick-prev, .slick-arrow {
+	background-image: url("../img/left_arrow.png");
+	background-repeat: no-repeat;
+	background-position: center left;
+	margin-left: -111px;
+	opacity: 0.75;
+	width: 30px;
+	height: 30px;
+}
+.regular .slick-next, .slick-arrow {
+	background-image: url("../img/right_arrow.png");
+	background-repeat: no-repeat;
+	background-position: center right;
+	margin-right: -111px;
+	opacity: 0.75;
+	width: 30px;
+	height: 30px;
+}
+.ico {
+    display: inline-block;
+    position: relative;
+    background: transparent url("../img/sprite.png") 0 0 no-repeat;
+    content: " ";
+    margin: 0 5px;
+    vertical-align: middle;
+}
+.ico-graph-home-v2 {
+    background-position: -382px -322px;
+    height: 43px;
+    width: 43px;
+}
+.regular .carousel-content1 .graph {
+    width: 25%;
+    padding: 20px 0 2px 3%;
+}
+
+/*responsive design*/
+@media (max-width: 768px) {
+	.regular .slick-prev, .slick-arrow {
+		display: none !important;
+	}
+	.regular .slick-next, .slick-arrow {
+		display: none !important;
+	}
+}
